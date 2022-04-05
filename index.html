@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <p>打字機</p>
+  <p id="log"></p>
+  <script type="text/javascript">
+    const log = document.getElementById('log');
+    document.addEventListener('keypress', logKey);
+    function logKey(e) {
+      log.textContent += e.key;
+    }
+  </script>
+</body>
+
+</html>
